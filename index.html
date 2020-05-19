@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Adam Hauze">
+  <meta name="description" content="The purpose of this webpage is practice my HTML and CSS skills by building a survey form webpage.">
+  <title>Hyper Style Script Survey Form</title>
+</head>
+<body>
+  
+  <!-- Main content container -->
+  <div class="container">
+
+    <!-- Header section -->
+    <header>
+      <h1 id="title">hyper style script Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help me improve the platform
+      </p>
+    </header>
+
+    <!-- Form section -->
+    <form id="survey-form" action="">
+
+      <!-- User's Name -->
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input 
+          type="text" 
+          name="name"
+          id="name"
+          required
+          placeholder="Enter your name">
+      </div>
+
+      <!-- User's Email -->
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input 
+          type="email"
+          id="name"
+          name="email"
+          required
+          placeholder="Enter your Email">
+      </div>
+
+      <!-- User's Age -->
+      <div class="form-group">
+        <label id="number-label" for="number">Age (optional)</label>
+        <input 
+          type="number" 
+          name="age" 
+          id="number"
+          min="10"
+          max="99"
+          placeholder="Age">
+      </div>
+
+      <!-- User's current role -->
+      <div class="form-group">
+        <label id="dropdown-label" for="dropdown">Which option best describes your current role?</label>
+        <select name="current-role" id="dropdown">
+          <option value="">Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <!-- Would they recommend -->
+      <div class="form-group">
+        <p>Would you recommend hyper style script to a friend?</p>
+        <label>
+          <input 
+            name="user-recommend"
+            type="radio"
+            value="definitely"
+            checked>
+          Definitely
+        </label>
+        <label>
+          <input 
+            name="user-recommend"
+            type="radio"
+            value="maybe">
+          Maybe
+        </label>
+        <label>
+          <input 
+            name="user-recommend"
+            type="radio"
+            value="no">
+          Probably not
+        </label>
+      </div>
+
+      <!-- Favorite Feature -->
+      <div class="form-group">
+        <label id="dropdownV2-label" for="dropdownV2">What's your favorite feature of hyper style script?</label>
+        <select name="favoriteFeature" id="dropdownV2">
+          <option value="">Select an option</option>
+          <option value="challenges">Coding challenge videos</option>
+          <option value="lifestyleBlogs">Lifestyle blog posts</option>
+          <option value="livestreams">Live stream coding videos</option>
+          <option value="softwareReviews">Resource page</option>
+          <option value="tutorials">Tutorial videos</option>
+        </select>
+      </div>
+
+      <!-- What to improve -->
+      <div class="form-group">
+        <p>What would you like to see improved? (Check all that apply)</p>
+    
+        <input type="checkbox" id="challenge-checkbox" name="prefer" value="challenges">
+        <label id="challenges-label" for="challenge-checkbox">Coding challenges</label>
+        <input type="checkbox" id="resources-checkobox" name="prefer" value="resources">
+        <label id="resources-label" for="resources-checkobox">Free resources</label>
+        <input type="checkbox" id="lifestyle-checkbox" name="prefer" value="lifestyle">
+        <label id="lifestyle-label" for="lifestyle-checkbox">Lifestyle & motivation videos</label>
+        <input type="checkbox" id="livestream-checkbox" name="prefer" value="livestreams">
+        <label id="livestream-label" for="livestream-checkbox">Live streams</label>
+        <input type="checkbox" id="projects-checkbox" name="prefer" value="projects">
+        <label id="project-label" for="projects-checkbox">Projects</label>
+        <input type="checkbox" id="tutorials-checkbox" name="prefer" value="tutorials">
+        <label id="tutorials-label" for="tutorials-checkbox">Tutorial videos</label>
+        <input type="checkbox" id="videoProd-checkbox" name="prefer" value="videoProduction">
+        <label id="videoProd-label" for="videoProd-checkbox">Video production/editing quality</label>
+      </div>
+
+      <!-- Comments or Suggestions -->
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        
+        <textarea 
+          type="textarea"
+          id="comments"
+          name="comments"
+          rows="5"
+          cols="33"
+          placeholder="Enter your comments here...">
+        </textarea>
+      </div>
+      
+    </form>
+
+  </div>
+</body>
+</html>
