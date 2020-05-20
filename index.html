@@ -31,6 +31,7 @@
           type="text" 
           name="name"
           id="name"
+          class="form-control"
           required
           placeholder="Enter your name">
       </div>
@@ -42,6 +43,7 @@
           type="email"
           id="name"
           name="email"
+          class="form-control"
           required
           placeholder="Enter your Email">
       </div>
@@ -53,6 +55,7 @@
           type="number" 
           name="age" 
           id="number"
+          class="form-control"
           min="10"
           max="99"
           placeholder="Age">
@@ -61,7 +64,7 @@
       <!-- User's current role -->
       <div class="form-group">
         <label id="dropdown-label" for="dropdown">Which option best describes your current role?</label>
-        <select name="current-role" id="dropdown">
+        <select name="current-role" id="dropdown" class="form-control">
           <option value="">Select current role</option>
           <option value="student">Student</option>
           <option value="job">Full Time Job</option>
@@ -79,6 +82,7 @@
             name="user-recommend"
             type="radio"
             value="definitely"
+            class="input-radio"
             checked>
           Definitely
         </label>
@@ -86,12 +90,14 @@
           <input 
             name="user-recommend"
             type="radio"
+            class="input-radio"
             value="maybe">
           Maybe
         </label>
         <label>
           <input 
             name="user-recommend"
+            class="input-radio"
             type="radio"
             value="no">
           Probably not
@@ -101,7 +107,7 @@
       <!-- Favorite Feature -->
       <div class="form-group">
         <label id="dropdownV2-label" for="dropdownV2">What's your favorite feature of hyper style script?</label>
-        <select name="favoriteFeature" id="dropdownV2">
+        <select name="favoriteFeature" id="dropdownV2" class="form-control">
           <option value="">Select an option</option>
           <option value="challenges">Coding challenge videos</option>
           <option value="lifestyleBlogs">Lifestyle blog posts</option>
@@ -115,20 +121,81 @@
       <div class="form-group">
         <p>What would you like to see improved? (Check all that apply)</p>
     
-        <input type="checkbox" id="challenge-checkbox" name="prefer" value="challenges">
-        <label id="challenges-label" for="challenge-checkbox">Coding challenges</label>
-        <input type="checkbox" id="resources-checkobox" name="prefer" value="resources">
-        <label id="resources-label" for="resources-checkobox">Free resources</label>
-        <input type="checkbox" id="lifestyle-checkbox" name="prefer" value="lifestyle">
-        <label id="lifestyle-label" for="lifestyle-checkbox">Lifestyle & motivation videos</label>
-        <input type="checkbox" id="livestream-checkbox" name="prefer" value="livestreams">
-        <label id="livestream-label" for="livestream-checkbox">Live streams</label>
-        <input type="checkbox" id="projects-checkbox" name="prefer" value="projects">
-        <label id="project-label" for="projects-checkbox">Projects</label>
-        <input type="checkbox" id="tutorials-checkbox" name="prefer" value="tutorials">
-        <label id="tutorials-label" for="tutorials-checkbox">Tutorial videos</label>
-        <input type="checkbox" id="videoProd-checkbox" name="prefer" value="videoProduction">
-        <label id="videoProd-label" for="videoProd-checkbox">Video production/editing quality</label>
+  
+        <label id="challenges-label" for="challenge-checkbox">
+          <input 
+            type="checkbox" 
+            id="challenge-checkbox" 
+            name="prefer" 
+            value="challenges"
+            class="input-checkbox">
+            Coding challenges
+        </label>
+        
+        <label id="resources-label" for="resources-checkobox">
+          <input 
+            id="resources-checkobox" 
+            type="checkbox" 
+            name="prefer" 
+            value="resources" 
+            class="input-checkbox">
+            Free resources
+        </label>
+
+        
+        <label id="lifestyle-label" for="lifestyle-checkbox">
+          <input 
+            type="checkbox" 
+            id="lifestyle-checkbox" 
+            name="prefer" 
+            value="lifestyle" 
+            class="input-checkbox">
+            Lifestyle & motivation videos
+        </label>
+
+        
+        <label id="livestream-label" for="livestream-checkbox">
+          <input 
+            type="checkbox" 
+            id="livestream-checkbox" 
+            name="prefer" 
+            value="livestreams" 
+            class="input-checkbox">
+            Live streams
+          </label>
+
+        
+        <label id="project-label" for="projects-checkbox">
+          <input 
+            type="checkbox" 
+            id="projects-checkbox" 
+            name="prefer" 
+            value="projects" 
+            class="input-checkbox">
+            Projects
+          </label>
+
+        
+        <label id="tutorials-label" for="tutorials-checkbox">
+          <input 
+            type="checkbox" 
+            id="tutorials-checkbox" 
+            name="prefer" 
+            value="tutorials" 
+            class="input-checkbox">
+            Tutorial videos
+          </label>
+
+        
+        <label id="videoProd-label" for="videoProd-checkbox">
+          <input 
+            type="checkbox" 
+            id="videoProd-checkbox"
+            name="prefer" 
+            value="videoProduction" 
+            class="input-checkbox">
+            Video production/editing quality
+          </label>
       </div>
 
       <!-- Comments or Suggestions -->
@@ -141,7 +208,8 @@
           name="comments"
           rows="5"
           cols="33"
-          placeholder="Enter your comments here...">
+          placeholder="Enter your comments here..."
+          class="input-textarea">
         </textarea>
       </div>
       
