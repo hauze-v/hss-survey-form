@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+/* || Set some global CSS variables|| */
+:root {
+  --color-white: #f3f3f3;
+  --color-darkgray: #27323a;
+  --color-lightgray: #435055;
+  --color-darkblue: #14314d;
+  --color-lightblue: #51b7f6;
+}
+
+/* || General Styles || */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* mobile friendly alternative to using background-attachment: fixed */
+/* makes use of the ::before pseudo element and content property */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkgray);
+  background-image: linear-gradient(180deg, rgba(39,50,58,0.8) 15%, rgba(67,80,85,0.7) 58%, rgba(123,139,153,0.7) 100%), url(images/blur-close-up-code-computer-546819.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+form {
+  background-color: var(--color-darkblue);
+}
+
+label {
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
