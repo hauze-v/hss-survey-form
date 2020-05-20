@@ -9,6 +9,7 @@
   --color-lightblue: #51b7f6;
 }
 
+
 /* || General Styles || */
 body {
   font-family: 'Poppins', sans-serif;
@@ -17,7 +18,7 @@ body {
   line-height: 1.4;
   color: var(--color-white);
   margin: 0;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -51,7 +52,6 @@ h1,
 p {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-size: 1.125rem;
 }
 
 label {
@@ -100,8 +100,23 @@ button {
 
 .description {
   font-style: italic;
-  font-weight: 200;
+  font-weight: 400;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.footer {
+  text-align: center;
+  margin: 30px 30px;
+}
+
+.footer a:link {
+  color: var(--color-lightblue);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--color-white);
 }
 
 /* || form || */
@@ -160,10 +175,15 @@ form {
 
 .submit-button {
   display: block;
-  width: 100%;
+  width: 103%;
   padding: 0.75rem;
-  background: var(--color-green);
+  background: var(--color-lightblue);
   color: inherit;
   border-radius: 2px;
   cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.submit-button:hover {
+  background: #3078a5
 }
